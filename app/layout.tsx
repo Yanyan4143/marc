@@ -23,7 +23,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Marc Angender A. Monoy — Registrar Staff & Practicumer",
+  title: "Portfolio Marc Angenderr",
   description: "Professional portfolio of Marc Angender A. Monoy...",
   icons: {
     icon: "/ch.ico",

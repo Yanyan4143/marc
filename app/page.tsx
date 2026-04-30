@@ -140,23 +140,37 @@ export default function OptimizedPortfolio() {
           </div>
 
           {/* EXPERIENCE SECTION */}
-          <div className={`md:col-span-8 p-8 md:p-10 rounded-[2.5rem] border ${themeClasses.card}`}>
-            <div className="flex items-center gap-3 mb-6"><Building2 className="text-indigo-500" /><h3 className="text-xl md:text-2xl font-black uppercase">Experience & OJT</h3></div>
-            <div className="mb-8">
-              <h4 className="font-bold text-lg text-indigo-500">Registrar Staff</h4>
-              <p className="font-bold text-sm mb-2 opacity-70 italic">Salazar Colleges of Science and Institute of Technology • 3 Years</p>
-              <p className="italic opacity-70 leading-relaxed text-sm">
-                Responsible for encoding and processing academic documents such as Transcript of Records (TOR), Diplomas, and certificates. Provides customer service by assisting students and external clients, and manages incoming and outgoing mails as well as local and international phone calls.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-lg text-indigo-500">Golden Peak Hotel (OJT)</h4>
-              <p className="font-bold text-sm mb-2 opacity-70 italic">Kitchen Department • 600 Hours</p>
-              <p className="italic opacity-70 leading-relaxed text-sm">
-                Responsible for maintaining and marketing stocks for the entire kitchen department.
-              </p>
-            </div>
-          </div>
+<div className={`md:col-span-8 p-8 md:p-10 rounded-[2.5rem] border ${themeClasses.card}`}>
+  <div className="flex items-center gap-3 mb-6">
+    <Building2 className="text-indigo-500" />
+    <h3 className="text-xl md:text-2xl font-black uppercase">Experience & OJT</h3>
+  </div>
+
+  {/* NEW ENTRY: Good luck Hot Pot */}
+  <div className="mb-8">
+    <h4 className="font-bold text-lg text-indigo-500">Good luck Hot Pot (OJT)</h4>
+    <p className="font-bold text-sm mb-2 opacity-70 italic">Food & Beverage Service • 500 Hours</p>
+    <p className="italic opacity-70 leading-relaxed text-sm">
+      Ensured efficient and timely delivery of orders from the kitchen to guest tables while maintaining high standards of accuracy and service quality in a fast-paced environment.
+    </p>
+  </div>
+
+  <div className="mb-8">
+    <h4 className="font-bold text-lg text-indigo-500">Registrar Staff</h4>
+    <p className="font-bold text-sm mb-2 opacity-70 italic">Salazar Colleges of Science and Institute of Technology • 3 Years</p>
+    <p className="italic opacity-70 leading-relaxed text-sm">
+      Responsible for encoding and processing academic documents such as Transcript of Records (TOR), Diplomas, and certificates. Provides customer service by assisting students and external clients, and manages incoming and outgoing mails as well as local and international phone calls.
+    </p>
+  </div>
+
+  <div>
+    <h4 className="font-bold text-lg text-indigo-500">Golden Peak Hotel (OJT)</h4>
+    <p className="font-bold text-sm mb-2 opacity-70 italic">Kitchen Department • 600 Hours</p>
+    <p className="italic opacity-70 leading-relaxed text-sm">
+      Responsible for maintaining and marketing stocks for the entire kitchen department.
+    </p>
+  </div>
+</div>
 
           {/* LANGUAGES SECTION */}
           <div className={`md:col-span-4 p-8 md:p-10 rounded-[2.5rem] border ${themeClasses.card}`}>

@@ -172,20 +172,60 @@ export default function OptimizedPortfolio() {
   </div>
 </div>
 
-          {/* LANGUAGES SECTION */}
-          <div className={`md:col-span-4 p-8 md:p-10 rounded-[2.5rem] border ${themeClasses.card}`}>
-            <div className="flex items-center gap-3 mb-6"><Languages className="text-indigo-500" /><h3 className="text-xl font-black uppercase">Languages</h3></div>
-            <div className="space-y-4">
-              {['English', 'Tagalog', 'Bisaya'].map(lang => (
-                <div key={lang} className="flex items-center justify-between font-bold">
-                  <span className="opacity-70">{lang}</span>
-                  <div className="flex gap-1">
-                     {[1, 2, 3, 4, 5].map(i => <div key={i} className={`w-2 h-2 rounded-full ${i <= 4 ? "bg-indigo-500" : "bg-slate-700"}`} />)}
-                  </div>
-                </div>
-              ))}
-            </div>
+          {/* LANGUAGES & EXPERTISE SECTION */}
+<div className={`md:col-span-4 p-8 md:p-10 rounded-[2.5rem] border flex flex-col gap-8 ${themeClasses.card}`}>
+  {/* Languages Sub-section */}
+  <div>
+    <div className="flex items-center gap-3 mb-6">
+      <Languages className="text-indigo-500" />
+      <h3 className="text-xl font-black uppercase">Languages</h3>
+    </div>
+    <div className="space-y-4">
+      {['English', 'Tagalog', 'Bisaya'].map(lang => (
+        <div key={lang} className="flex items-center justify-between font-bold">
+          <span className="opacity-70">{lang}</span>
+          <div className="flex gap-1">
+            {[1, 2, 3, 4, 5].map(i => (
+              <div key={i} className={`w-2 h-2 rounded-full ${i <= 4 ? "bg-indigo-500" : "bg-slate-700"}`} />
+            ))}
           </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* Divider Line */}
+  <div className={`h-px w-full ${darkMode ? "bg-slate-800" : "bg-slate-100"}`} />
+
+  {/* Expertise Sub-section */}
+  <div>
+    <div className="flex items-center gap-3 mb-6">
+      <Sparkles className="text-indigo-500" />
+      <h3 className="text-xl font-black uppercase">Expertise</h3>
+    </div>
+    <div className="flex flex-wrap gap-2">
+      {[
+        "Management skills", 
+        "Communication", 
+        "Problem Solving", 
+        "Critical Thinking", 
+        "Leadership", 
+        "Computer Literate"
+      ].map((skill) => (
+        <span 
+          key={skill} 
+          className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-colors ${
+            darkMode 
+              ? "bg-slate-800/50 border-slate-700 text-indigo-300" 
+              : "bg-indigo-50 border-indigo-100 text-indigo-600"
+          }`}
+        >
+          {skill}
+        </span>
+      ))}
+    </div>
+  </div>
+</div>
 
           {/* EDUCATION & CHARACTER REFERENCE */}
           <div className={`md:col-span-6 p-8 md:p-10 rounded-[2.5rem] border ${themeClasses.card}`}>
